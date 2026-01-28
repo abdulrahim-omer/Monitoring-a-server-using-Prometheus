@@ -12,8 +12,8 @@ This repository provides a complete stack to monitor Linux server metrics using 
    ```bash
    docker-compose up -d
 2.Accessing the Tools
- prometheus localhost:9090
- node exporter localhost:9100
+- prometheus http://localhost:9090
+- node exporter http://localhost:9100
 
 3.Sample Queries (PromQL)
 - cpu usage : 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
